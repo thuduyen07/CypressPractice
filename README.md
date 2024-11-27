@@ -15,4 +15,4 @@
     - `./node_modules/.bin/cypress open`
     - `npx cypress open`: pull cypress and run but not install into the environment
     - `yarn test` or `npm run test`: scripts commands config in packages
-
+15. Update [cypress config](./cypress.config.js)
