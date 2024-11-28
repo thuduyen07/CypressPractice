@@ -14,5 +14,7 @@
 14. Open cypress:
     - `./node_modules/.bin/cypress open`
     - `npx cypress open`: pull cypress and run but not install into the environment
+    - `yarn dev`: hot reloading
     - `yarn test` or `npm run test`: scripts commands config in packages
 15. Update [cypress config](./cypress.config.js)
+16. Install cypress-xpath: `npm install -D cypress-xpath`
