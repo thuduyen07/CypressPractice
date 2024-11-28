@@ -3,7 +3,8 @@
   "version": "1.0.0",
   "main": "index.js",
   "scripts": {
-    "test": "cypress open"
+    "dev": "cypress open",
+    "test": "cypress run --browser chrome --headed"
   },
   "keywords": [],
   "author": "",
@@ -11,6 +12,7 @@
   "description": "",
   "devDependencies": {
     "cypress": "^13.16.0",
+    "cypress-xpath": "^2.0.1",
     "help": "^3.0.2"
   }
 }
