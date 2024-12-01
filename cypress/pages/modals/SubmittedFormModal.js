@@ -1,4 +1,4 @@
-const MODAL_TITLE = ".modal-title";
+const MODAL_TITLE_LABEL = ".modal-title";
 const STUDENT_NAME_LABEL = "//td[text()='Student Name']";
 const STUDENT_EMAIL_LABEL = "//td[text()='Student Email']";
 const GENDER_LABEL = "//td[text()='Gender']";
@@ -11,10 +11,12 @@ const ADDRESS_LABEL = "//td[text()='Address']";
 const STATE_AND_CITY_LABEL = "//td[text()='State and City']";
 const CLOSE_BUTTON = "#closeLargeModal";
 
+const MODAL_TITLE = "Thanks for submitting the form";
+
 class SubmittedFormModal {
-    
+
     get modalTitle() {
-        return cy.get(MODAL_TITLE);
+        return cy.get(MODAL_TITLE_LABEL);
     }
 
     get studentNameValue() {
@@ -59,6 +61,45 @@ class SubmittedFormModal {
 
     get closeButton() {
         return cy.get(CLOSE_BUTTON);
+    }
+
+    verifyFormSubmissionSuccessfully = (student) => {
+        this.modalTitle
+            .should("have.text", MODAL_TITLE);
+
+        this.studentNameValue
+            .should("have.text", student.FirstName + " " + student.LastName);
+
+        this.studentEmailValue
+            .should("have.text", student.Email);
+
+        this.genderValue
+            .should("have.text", student.Gender);
+
+        this.mobileValue
+            .should("have.text", student.Mobile);
+
+        this.dateOfBirthValue.should("have.text", student.DateOfBirth);
+
+        this.subjectsValue
+            .should("have.text", student.Subjects);
+
+        this.hobbiesValue
+            .should("have.text", student.Hobbies);
+
+        this.pictureValue
+            .should("have.text", student.Picture);
+
+        this.addressValue
+            .should("have.text", student.Address);
+
+        this.stateAndCityValue
+            .should("have.text", student.State + " " + student.City);
+    }
+
+    verifyFormSubmissionFailed = () => {
+        this.modalTitle
+            .should("not.exist");
     }
 
 }
