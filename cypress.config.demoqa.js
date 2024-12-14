@@ -4,7 +4,7 @@ module.exports = defineConfig({
   
   e2e: {
     "baseUrl": "https://demoqa.com",
-    "specPattern": "./cypress/tests/**.*" ,
+    "specPattern": "./cypress/tests/demoqa/**.*" ,
     "defaultCommandTimeout": 40,
 
     setupNodeEvents(on, config) {

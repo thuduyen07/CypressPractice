@@ -4,7 +4,7 @@
   "main": "index.js",
   "scripts": {
     "dev": "cypress open",
-    "test": "cypress run --browser chrome --headed"
+    "demoqa": "cypress run --browser chrome --headed --config-file cypress.config.demoqa.js"
   },
   "keywords": [],
   "author": "Dannie (Duyen Nguyen)",

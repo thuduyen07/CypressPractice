@@ -13,7 +13,7 @@ const CLOSE_BUTTON = "#closeLargeModal";
 
 const MODAL_TITLE = "Thanks for submitting the form";
 
-class SubmittedFormModal {
+export default class SubmittedFormModal {
 
     get modalTitle() {
         return cy.get(MODAL_TITLE_LABEL);
@@ -104,4 +104,3 @@ class SubmittedFormModal {
 
 }
 
-module.exports = SubmittedFormModal;

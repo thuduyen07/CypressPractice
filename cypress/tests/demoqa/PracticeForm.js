@@ -1,10 +1,11 @@
 require('cypress-xpath');
 
-const STUDENT_INFORMATION_FILE = '../data/StudentInformation.json';
-const INVALID_STUDENT_INFORMATION_FILE = '../data/InvalidStudentInformation.json';
+const DATA_FOLDER_PATH = '../data/demoqa/';
+const STUDENT_INFORMATION_FILE = DATA_FOLDER_PATH + 'StudentInformation.json';
+const INVALID_STUDENT_INFORMATION_FILE = DATA_FOLDER_PATH + 'InvalidStudentInformation.json';
 
-import PracticeFormPage from "../pages/PracticeFormPage";
-import SubmittedFormModal from "../pages/modals/SubmittedFormModal";
+import PracticeFormPage from "../../pages/demoqa/PracticeFormPage";
+import SubmittedFormModal from "../../modals/demoqa/SubmittedFormModal";
 
 describe("Practice Form", () => {
 

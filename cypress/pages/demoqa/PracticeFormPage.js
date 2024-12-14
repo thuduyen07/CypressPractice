@@ -1,6 +1,6 @@
 import {format} from "date-fns";
 
-const DATA_FOLDER_PATH = "cypress/data/";
+const DATA_FOLDER_PATH = "cypress/data/demoqa/";
 
 const FIRST_NAME_TEXTBOX = "input[placeholder='First Name']";
 const LAST_NAME_TEXTBOX = "input[placeholder='Last Name']";
