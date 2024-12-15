@@ -30,7 +30,9 @@ Before you begin, ensure that you have the following installed on your system:
     - Use npx to pull and run Cypress without installing it: `npx cypress open`
 15. Run Scripts: Use the following scripts defined in package.json for running tests and development:
     - Run with hot reloading using Yarn: `yarn dev`
-    - Run test scripts via command that configured in package.json: `yarn test` or `npm run test`
+    - Run test scripts via command that configured in package.json:
+        - demoqa: `yarn demoqa` or `npm run demoqa`
+        - behance: `yarn behance` or `npm run behance`
 
 ## Additional Information
 
