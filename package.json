@@ -4,7 +4,8 @@
   "main": "index.js",
   "scripts": {
     "dev": "cypress open",
-    "demoqa": "cypress run --browser chrome --headed --config-file cypress.config.demoqa.js"
+    "demoqa": "cypress run --browser chrome --headed --config-file cypress.config.demoqa.js",
+    "behance": "cypress run --browser chrome --headed --config-file cypress.config.behance.js"
   },
   "keywords": [],
   "author": "Dannie (Duyen Nguyen)",
